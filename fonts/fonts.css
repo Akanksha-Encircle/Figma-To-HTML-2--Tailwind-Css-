@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('RobotoRegular.eot');
+    src: url('RobotoRegular.eot') format('embedded-opentype'),
+         url('RobotoRegular.woff2') format('woff2'),
+         url('RobotoRegular.woff') format('woff'),
+         url('RobotoRegular.ttf') format('truetype'),
+         url('RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('RobotoBold.eot');
+    src: url('RobotoBold.eot') format('embedded-opentype'),
+         url('RobotoBold.woff2') format('woff2'),
+         url('RobotoBold.woff') format('woff'),
+         url('RobotoBold.ttf') format('truetype'),
+         url('RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'JungleFever';
+    src: url('JungleFever.eot');
+    src: url('JungleFever.eot') format('embedded-opentype'),
+         url('JungleFever.woff2') format('woff2'),
+         url('JungleFever.woff') format('woff'),
+         url('JungleFever.ttf') format('truetype'),
+         url('JungleFever.svg#JungleFever') format('svg');
+}

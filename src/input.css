@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/RobotoRegular.woff') format('woff'),
+         url('../fonts/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold.eot');
+    src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoBold.woff2') format('woff2'),
+         url('../fonts/RobotoBold.woff') format('woff'),
+         url('../fonts/RobotoBold.ttf') format('truetype'),
+         url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'JungleFever';
+    src: url('../fonts/JungleFever.eot');
+    src: url('../fonts/JungleFever.eot') format('embedded-opentype'),
+         url('../fonts/JungleFever.woff2') format('woff2'),
+         url('../fonts/JungleFever.woff') format('woff'),
+         url('../fonts/JungleFever.ttf') format('truetype'),
+         url('../fonts/JungleFever.svg#JungleFever') format('svg');
+}
+
+@layer base {
+    h1 {
+        @apply font-jungle text-[80px] leading-[119%] text-marron uppercase;
+    }
+    h2 {
+        @apply font-jungle text-[48px] leading-[119%] text-marron uppercase;
+    }
+    h3 {
+        @apply font-jungle text-[32px] leading-[119%] text-marron uppercase;
+    }
+    h4 {
+        @apply font-jungle text-[24px] leading-[120%] text-marron uppercase;
+    }
+    h5 {
+        @apply font-jungle text-[20px] leading-[119%] text-marron uppercase;
+    }
+    h6 {
+        @apply font-jungle text-[16px] leading-[119%] text-marron uppercase;
+    }
+    p, a {
+        @apply font-roboto_reg text-[16px] leading-[162.5%] text-[#5A5A5A];
+    }
+    a, button {
+        @apply transition ease-in-out duration-300;
+    }
+    a:hover {
+        @apply text-marron;
+    }
+}
+
+@layer components {
+    .btn-yellow {
+        @apply inline-flex justify-center items-center px-[27px] py-[9px] font-roboto_bold text-[16px] leading-[162.5%] text-marron bg-yellow border-[2px] border-marron rounded-[23px] shadow-[0px_4px_0px_#A93800];
+    }
+    .btn-yellow:hover {
+        @apply bg-white;
+    }
+    .btn-white {
+        @apply inline-flex justify-center items-center px-[27px] py-[9px] bg-white border-[2px] border-marron rounded-[23px] shadow-[0px_4px_0px_#A93800];
+    }
+    .btn-white:hover {
+        @apply text-yellow bg-marron border-yellow shadow-yellow;
+    }
+    .slide-arrow {
+        @apply inline-flex justify-center items-center border-[2px] border-marron bg-marron text-white p-[12.5px] rounded-[50%] transition ease-in-out duration-300;
+    }
+    .slide-arrow:hover {
+        @apply bg-transparent text-marron;
+    }
+    .slide-arrow i,
+    .slide-arrow svg {
+        @apply w-[20px] h-[20px];
+    }
+}
+
+@layer utilities {
+    .overflow-hidden {
+        @apply overflow-hidden;
+    }
+    .nav-icon i,
+    .nav-icon svg {
+        @apply w-[20px] h-[20px];
+    }
+
+}
+
+.text-stroke-slide-1 {
+    -webkit-text-stroke: 2px #A93800;
+    text-stroke: 2px #A93800;
+}
+
+.text-shadow-slide-1 {
+    text-shadow: 0px 4px 0px #A93800;
+}
+
+.banner-bg-gradient {
+    background: linear-gradient(90deg, rgba(240, 103, 0, 0) 0%, #F06700 100%), #FFED30;
+}
+
+.basis-562 {
+    flex-basis: calc(100% - 562px);
+}
+
+.height-52 {
+    height: calc(100% - 52px);
+}
