@@ -143,3 +143,194 @@ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
+
+/* headers */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 1512px;
+height: 1000px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* header content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+width: 1512px;
+height: 1000px;
+
+/* Black */
+background: #000000;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* header 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 124px 0px 0px;
+gap: 40px;
+isolation: isolate;
+
+width: 1512px;
+height: 1000px;
+
+background: linear-gradient(90deg, rgba(47, 20, 9, 0) 0%, #2F1409 100%), #A93800;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* header 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 124px 0px 0px;
+gap: 40px;
+isolation: isolate;
+
+width: 1512px;
+height: 1000px;
+
+/* Gradient 1 */
+background: linear-gradient(90deg, rgba(69, 123, 0, 0) 0%, #457B00 100%), #F8FF00;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+/* Oreo Mini Biscuit Original 55g 2 */
+
+width: 258.56px;
+height: 340px;
+
+background: url(Oreo Mini Biscuit Original 55g.png);
+filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+/* Line 1 */
+
+width: 58px;
+height: 0px;
+
+/* Font */
+border: 1px solid #5A5A5A;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 228px 55px 100px;
+gap: 100px;
+
+width: 1512px;
+height: 1151px;
+
+/* Gradient 1 */
+background: linear-gradient(90deg, rgba(69, 123, 0, 0) 0%, #457B00 100%), #F8FF00;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* copy */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 44px 40px 40px;
+gap: 14px;
+
+width: 440.67px;
+height: 333px;
+
+background: rgba(255, 255, 255, 0.55);
+/* White */
+border: 2px solid #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+/* number */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 80px;
+height: 80px;
+
+/* White */
+background: #FFFFFF;
+/* Brown 1 */
+border: 2px solid #A93800;
+/* Solid Shadow 1 */
+box-shadow: 0px 4px 0px #A93800;
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
