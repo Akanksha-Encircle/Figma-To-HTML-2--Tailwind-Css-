@@ -334,3 +334,25 @@ border-radius: 40px;
 flex: none;
 order: 0;
 flex-grow: 0;
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 100px 55px 228px;
+gap: 100px;
+
+width: 1512px;
+height: 1028px;
+
+background: linear-gradient(90deg, rgba(47, 20, 9, 0) 0%, #2F1409 100%), #A93800;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;

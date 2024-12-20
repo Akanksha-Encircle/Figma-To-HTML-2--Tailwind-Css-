@@ -44,6 +44,19 @@
 			});
 		}
 
+		$(".at-title").click(function () {
+			$(this)
+				.toggleClass("active")
+				.next(".at-tab")
+				.slideToggle()
+				.parent()
+				.siblings()
+				.find(".at-tab")
+				.slideUp()
+				.prev()
+				.removeClass("active");
+		});
+
 		var swiperBanner = new Swiper(".bannerSwiper", {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -68,16 +81,48 @@
 					spaceBetween: 40,
 				},
 				1024: {
-				  slidesPerView: 2,
-				  spaceBetween: 80,
+					slidesPerView: 2,
+					spaceBetween: 80,
 				},
 				1280: {
-				  slidesPerView: 3,
-				  spaceBetween: 40,
+					slidesPerView: 3,
+					spaceBetween: 40,
 				},
 				1432: {
-				  slidesPerView: 3,
-				  spaceBetween: 80,
+					slidesPerView: 3,
+					spaceBetween: 80,
+				},
+			},
+		});
+
+		var swiperYear = new Swiper(".yearSwiper", {
+			slidesPerView: 1.4,
+			spaceBetween: 20,
+			loop: true,
+			navigation: {
+				nextEl: ".year-swiper-button-next",
+				prevEl: ".year-swiper-button-prev",
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2.4,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 1.4,
+					spaceBetween: 40,
+				},
+				1280: {
+					slidesPerView: 1.4,
+					spaceBetween: 75,
+				},
+				2100: {
+					slidesPerView: 2.4,
+					spaceBetween: 75,
+				},
+				3200: {
+					slidesPerView: 3.4,
+					spaceBetween: 75,
 				},
 			},
 		});

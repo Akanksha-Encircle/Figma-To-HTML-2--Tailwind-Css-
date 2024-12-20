@@ -91,6 +91,10 @@
     .border-marron-color {
         @apply border-[2px] border-marron;
     }
+
+    .shadow-with-white {
+        @apply shadow-[0px_4px_0px_#FFFFFF];
+    }
 }
 
 @layer utilities {
@@ -102,6 +106,11 @@
         @apply w-[20px] h-[20px];
     }
 
+    .social-icon i,
+    .social-icon svg {
+        @apply w-[22px] h-[22px];
+    }
+
     .swiper-slide {
         @apply h-auto;
     }
@@ -111,6 +120,10 @@
     }
     .header {
         @apply absolute transition ease-in-out duration-300;
+    }
+
+    .paragraph-20 {
+        @apply text-[18px] md:text-[20px] leading-[150%];
     }
 }
 
@@ -164,6 +177,14 @@
     flex-basis: calc(100% - 770px);
 }
 
+.basis-1009 {
+    flex-basis: calc(100% - 1009px);
+}
+
+.w-year-slider {
+    width: calc(100% - (((100% - 1432px) / 2) + 560px));
+}
+
 .width-20 {
     width: calc(100% + 20px);
 }
@@ -176,6 +197,26 @@
     height: calc(100% - 360px);
 }
 
+.at-tab {
+    display: none;
+}
+
+.at-title.active .nav-icon i,
+.at-title.active .nav-icon svg {
+    transform: rotate(-180deg);
+    transition: all ease-in-out 300ms;
+}
+
+@media (min-width: 1280px) and (max-width: 1431px) {
+    .w-year-slider {
+        width: calc(100% - (((100% - 1280px) / 2) + 560px));
+    }
+
+    .basis-1009 {
+        flex-basis: calc(100% - 929px);
+    }
+}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
     .basis-562 {
         flex-basis: calc(100% - 480px);
@@ -183,6 +224,14 @@
 
     .basis-770 {
         flex-basis: calc(100% - 630px);
+    }
+
+    .w-year-slider {
+        width: calc(100% - (((100% - 1124px) / 2) + 560px));
+    }
+
+    .basis-1009 {
+        flex-basis: calc(50% - 40px);
     }
 }
 
@@ -194,10 +243,24 @@
     .basis-770 {
         flex-basis: unset;
     }
+
+    .w-year-slider {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .basis-1009 {
+        flex-basis: calc(50% - 40px);
+    }
 }
 
 @media (max-width: 767px) {
     .height-360 {
         height: calc(100% - 340px);
+    }
+
+    .basis-1009 {
+        flex-basis: 100%;
     }
 }
